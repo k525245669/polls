@@ -25,7 +25,7 @@ SECRET_KEY = '7en18bqwf*ex67%j^%kw91#z+gv)i_w+f4r%6u0=*!5lur()ig'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['123.207.215.17', 'hqyt1874.com', 'www.hqyt1874.com']
 
 
 # Application definition
@@ -120,3 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static').replace('\\','/')
+STATTICFILES_DIRS=(
+'/usr/local/python360/lib/python3.6/site-packages/django/contrib/admin/static'
+)
